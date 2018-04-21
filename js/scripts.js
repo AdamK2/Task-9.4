@@ -1,14 +1,19 @@
-var a = 2;
-var b = 3;
-var a = prompt("Type value a");
-var b = prompt("Type value b");
-var value = (a * a) - (2 * a * b) - (b * b);
-console.log("Result is: "+ value); 
-
-if (value > 0) {
-    console.log("Result positive")
-} else if (value < 0) {
-    console.log("Result negative")
-} else {
-    console.log("Result equals zero")
+var drawTree = 20;
+var i = 1;
+while (i < drawTree) {	
+	var space2 = "";
+	var space3 = " ";
+	for (k=drawTree; k>i; k = k-2) {
+		space2 += space3;
+	}
+	var star = "";
+	var space = "*";		
+	for (j=0; j<i; j++) {		
+		star += space;	
+	} 
+console.log(space2 += star);
+i = i+2; 
 }
+
+
+
